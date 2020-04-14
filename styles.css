@@ -8,9 +8,10 @@
 }
 
 .intro__video {
-  left: 0;
+  left: 50%;
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translate(-50%,-50%);
   z-index: 1;
 }
 @media (max-width: 816px ) {
