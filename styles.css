@@ -13,6 +13,11 @@
 .intro__cta-text,
 .intro__cta-link {
   color: white;
+  text-align: center;
   position: relative;
   z-index: 2;
+}
+
+.intro__cta-link {
+  display: block;
 }
