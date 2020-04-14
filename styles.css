@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "font";
+  font-family: "meetup-font";
   src: url("meetup-font.woff2") format("woff2");
 }
 
@@ -10,7 +10,7 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
-  font-family: "font";
+  font-family: "meetup-font";
 }
 
 .intro__video {
@@ -30,6 +30,10 @@
   .intro__video {
     width: 100%;
   }
+}
+
+.intro__heading {
+  font-size: 46px;
 }
 
 .intro__heading,
