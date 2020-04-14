@@ -11,8 +11,17 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 100%;
   z-index: 1;
+}
+@media (max-width: 816px ) {
+  .intro__video {
+    height: 100%;
+  }
+}
+@media (min-width: 817px ) {
+  .intro__video {
+    width: 100%;
+  }
 }
 
 .intro__heading,
