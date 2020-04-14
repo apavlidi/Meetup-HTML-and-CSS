@@ -9,7 +9,10 @@
   z-index: 1;
 }
 
-.intro__heading {
+.intro__heading,
+.intro__cta-text,
+.intro__cta-link {
+  color: white;
   position: relative;
   z-index: 2;
 }
