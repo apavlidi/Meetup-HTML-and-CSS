@@ -1,4 +1,8 @@
 .intro {
+  display: flex;
+  flex-direction: column;
+  height: 460px;
+  justify-content: center;
   overflow: hidden;
   position: relative;
 }
