@@ -1,3 +1,7 @@
+.intro {
+  position: relative;
+}
+
 .intro__video {
   left: 0;
   position: absolute;
