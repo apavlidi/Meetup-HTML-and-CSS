@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "font";
+  src: url("meetup-font.woff2") format("woff2");
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -5,6 +10,7 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
+  font-family: "font";
 }
 
 .intro__video {
@@ -13,6 +19,7 @@
   top: 50%;
   transform: translate(-50%,-50%);
   z-index: 1;
+
 }
 @media (max-width: 816px ) {
   .intro__video {
