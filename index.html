@@ -38,17 +38,17 @@
         Sorry, your browser doesn't support embedded videos.
       </video>
     </section>
-    <section class="more-info">
+    <section class="more-info more-info--hidden">
       <h2>This content is hidden :D</h2>
     </section>
   </main>
 
   <script>
-    let moreInfoButton = document.querySelector(".intro__more-info");
-    moreInfoButton.addEventListener('click', showMoreInfo);
-    function showMoreInfo() {
-      document.querySelector(".more-info").style.display='block';
+    const moreInfoButton = document.querySelector(".intro__more-info");
+    const showMoreInfo = () => {
+      document.querySelector(".more-info").classList.remove('more-info--hidden')
     }
+    moreInfoButton.addEventListener('click', showMoreInfo);
   </script>
 </body>
 </html>
