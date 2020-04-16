@@ -25,6 +25,7 @@
   <meta charset="UTF-8">
   <title>We are what we do | Meetup</title>
   <link rel="stylesheet" type="text/css" href="public/styles.css">
+  <script defer src="/public/moreInfo.js"></script>
 </head>
 <body>
   <header><h1>Example app</h1></header>
@@ -42,13 +43,5 @@
       <h2>This content is hidden :D</h2>
     </section>
   </main>
-
-  <script>
-    const moreInfoButton = document.querySelector(".intro__more-info");
-    const showMoreInfo = () => {
-      document.querySelector(".more-info").classList.remove('more-info--hidden')
-    }
-    moreInfoButton.addEventListener('click', showMoreInfo);
-  </script>
 </body>
 </html>
