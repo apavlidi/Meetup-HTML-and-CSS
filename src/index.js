@@ -1,7 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {Landing} from './components/Landing';
-import './app';
+import React from "react";
+import ReactDOM from "react-dom";
+import { MoreInfo } from "./components/MoreInfo";
+import "./app";
 
-
-ReactDOM.render(<Landing/>, document.getElementById("root"));
+ReactDOM.render(<MoreInfo />, document.getElementById("root"));
