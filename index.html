@@ -32,7 +32,7 @@
     <section class="intro">
       <h2 class="intro__heading">The real world is calling</h2>
       <p class="intro__cta-text">Join a local group to meet people, try something new, or do more of what you love.</p>
-      <button class="intro__more-info" >More info</button>
+      <button class="intro__more-info">More info</button>
       <video class="intro__video" autoplay muted loop>
         <source src="https://www.meetup.com/mu_static/en-US/video.dddafbfe.mp4" type="video/mp4">
         Sorry, your browser doesn't support embedded videos.
@@ -42,5 +42,13 @@
       <h2>This content is hidden :D</h2>
     </section>
   </main>
+
+  <script>
+    let moreInfoButton = document.querySelector(".intro__more-info");
+    moreInfoButton.addEventListener('click', showMoreInfo);
+    function showMoreInfo() {
+      document.querySelector(".more-info").style.display='block';
+    }
+  </script>
 </body>
 </html>
