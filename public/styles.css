@@ -48,7 +48,12 @@
 }
 
 .intro__more-info {
-  display: block;
+  background-color: coral;
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  width: 200px;
 }
 
 .more-info--hidden {
