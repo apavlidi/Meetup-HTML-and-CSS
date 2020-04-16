@@ -8,5 +8,7 @@ server.get('/', (request, response)=>{
     response.sendFile(path.join(__dirname + '/index.html'));
 })
 
-server.listen(port);
+server.listen(port, () =>{
+    console.log(`listening on http://localhost:${port}`);
+});
 
