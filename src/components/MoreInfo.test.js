@@ -1,13 +1,31 @@
 import "@testing-library/jest-dom";
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
 
 import { MoreInfo } from "./MoreInfo.js";
 
 describe("MoreInfo", () => {
+  let renderResult;
+  let button;
+
+  beforeEach(() => {
+    renderResult = render(<MoreInfo />);
+
+    button = renderResult.getByText("More info");
+  });
+
   it("has a button to show more info", () => {
-    const renderResult = render(<MoreInfo />);
-    const button = renderResult.getByText("More info");
     expect(button).toBeInTheDocument();
+  });
+
+  describe("When the button is clicked", () => {
+    beforeEach(() => {
+      fireEvent.click(button);
+    });
+
+    it("more info is show", () => {
+      const moreInfoSection = renderResult.queryByText("More info...");
+      expect(moreInfoSection).toBeInTheDocument();
+    });
   });
 });
