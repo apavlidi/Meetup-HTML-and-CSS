@@ -1,21 +1,18 @@
-import React from "react";
-// const moreInfoButton = document.querySelector(".intro__more-info");
-// const showMoreInfo = () => {
-//     document.querySelector(".more-info").classList.remove('more-info--hidden')
-// }
-// moreInfoButton.addEventListener('click', showMoreInfo);
+import React, { useState } from "react";
 
-
-function myFun() {
-    return "More info...";
-}
-
-const MoreInfo = () =>
+const MoreInfo = () => {
+  const [showMore, setShowMore] = useState(false);
+  const setShowToTrue = () => setShowMore(true);
+  return (
     <>
-        <button onClick={myFun}>More info</button>
-        <section className="more-info more-info--hidden">
-            <h2>More info...</h2>
+      <button onClick={setShowToTrue}>More info</button>
+      {showMore && (
+        <section className="more-info">
+          <h2>More info...</h2>
         </section>
+      )}
     </>
+  );
+};
 
-export {MoreInfo};
+export { MoreInfo };

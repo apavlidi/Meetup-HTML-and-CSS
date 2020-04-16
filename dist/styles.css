@@ -19,16 +19,15 @@
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-
 }
 
-@media (max-width: 816px ) {
+@media (max-width: 816px) {
   .intro__video {
     height: 100%;
   }
 }
 
-@media (min-width: 817px ) {
+@media (min-width: 817px) {
   .intro__video {
     width: 100%;
   }
@@ -54,8 +53,4 @@
   margin-right: auto;
   padding: 0.5rem;
   width: 200px;
-}
-
-.more-info--hidden {
-  display: none;
 }
