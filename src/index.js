@@ -1,5 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { MoreInfo } from "./components/MoreInfo";
+import {MoreInfo} from "./components/MoreInfo";
+import EarthquakesList from "./components/earthquake/EarthquakesList";
 
-ReactDOM.render(<MoreInfo />, document.getElementById("root"));
+ReactDOM.render(
+    <>
+        <EarthquakesList/>
+        <MoreInfo/>
+    </>
+    , document.getElementById("root"));
