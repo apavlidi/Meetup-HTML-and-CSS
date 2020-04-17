@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest --watch",
+    "testEQ": " jest src/components/earthquake/EarthquakesList.test.js --watch",
     "start": "webpack && node server.js"
   },
   "repository": {
