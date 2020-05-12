@@ -17,16 +17,17 @@
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 1;
-
 }
-@media (max-width: 816px ) {
+
+@media (max-width: 816px) {
   .intro__video {
     height: 100%;
   }
 }
-@media (min-width: 817px ) {
+
+@media (min-width: 817px) {
   .intro__video {
     width: 100%;
   }
@@ -38,13 +39,18 @@
 
 .intro__heading,
 .intro__cta-text,
-.intro__cta-link {
+.intro__more-info {
   color: white;
   text-align: center;
   position: relative;
   z-index: 2;
 }
 
-.intro__cta-link {
-  display: block;
+.intro__more-info {
+  background-color: coral;
+  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  width: 200px;
 }
